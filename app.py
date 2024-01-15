@@ -100,7 +100,7 @@ def home():
     if user_id:
         try:
             user_info = auth.get_account_info(user_id)
-            user_ref = f'users/{user_info["users"][0]["localId"]}'
+            user_ref = 'users/' + user_info["users"][0]["localId"]
             user_data = db.child(user_ref).get().val()
             if user_data:
                 count = user_data.get('count', 0)
