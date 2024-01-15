@@ -5,7 +5,6 @@ from datetime import datetime
 import cv2
 from posedetector import poseDetector
 
-
 app = Flask(__name__)
 app.secret_key = 'deeps'
 camera = None
