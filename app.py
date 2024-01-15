@@ -33,7 +33,7 @@ def initialize_camera():
     global camera
     if camera is None:
         try : 
-            camera = cv2.VideoCapture('./video/test1.mp4')
+            camera = cv2.VideoCapture('test1.mp4')
         except:
             return None
 
